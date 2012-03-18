@@ -4,7 +4,7 @@
       "Gianni Ceccarelli <gianni.ceccarelli@net-a-porter.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.300009, CPAN::Meta::Converter version 2.120530",
+   "generated_by" : "Dist::Zilla version 4.300010, CPAN::Meta::Converter version 2.120630",
    "license" : [
       "perl_5"
    ],
@@ -26,6 +26,7 @@
       },
       "runtime" : {
          "requires" : {
+            "Catalyst::Action::REST" : "0",
             "Catalyst::Controller::ActionRole" : "0",
             "List::Util" : "0",
             "Moose" : "0",
@@ -53,6 +54,6 @@
       }
    },
    "release_status" : "testing",
-   "version" : "0.1_01"
+   "version" : "0.1_02"
 }
 
