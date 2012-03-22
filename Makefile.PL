@@ -22,6 +22,7 @@ my %WriteMakefileArgs = (
     "Data::Printer" => 0,
     "FindBin::libs" => 0,
     "HTTP::Request" => 0,
+    "JSON" => 0,
     "JSON::XS" => 0,
     "Net::Stomp" => 0,
     "Test::More" => 0,
@@ -45,7 +46,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.1_04",
+  "VERSION" => "0.1_05",
   "test" => {
     "TESTS" => "t/*.t"
   }
