@@ -1,6 +1,6 @@
 package Catalyst::ActionRole::JMS;
 {
-  $Catalyst::ActionRole::JMS::VERSION = '1.0';
+  $Catalyst::ActionRole::JMS::VERSION = '1.1';
 }
 {
   $Catalyst::ActionRole::JMS::DIST = 'Catalyst-ActionRole-JMS';
@@ -67,6 +67,7 @@ sub _match_jmstype {
 1;
 
 __END__
+
 =pod
 
 =encoding utf-8
@@ -77,7 +78,7 @@ Catalyst::ActionRole::JMS - role for actions to dispatch based on JMSType
 
 =head1 VERSION
 
-version 1.0
+version 1.1
 
 =head1 SYNOPSIS
 
@@ -147,4 +148,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

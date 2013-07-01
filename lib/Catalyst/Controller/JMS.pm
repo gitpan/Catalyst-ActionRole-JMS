@@ -1,6 +1,6 @@
 package Catalyst::Controller::JMS;
 {
-  $Catalyst::Controller::JMS::VERSION = '1.0';
+  $Catalyst::Controller::JMS::VERSION = '1.1';
 }
 {
   $Catalyst::Controller::JMS::DIST = 'Catalyst-ActionRole-JMS';
@@ -32,7 +32,7 @@ around create_action => sub {
     my $type = delete $args{attributes}->{MessageTarget};
     if ($type) {
         $args{attributes}->{Path} = [$self->path_prefix()];
-        $args{attributes}->{JMSType} = [$type->[0] // $args{name}];
+        $args{attributes}->{JMSType} = [$type->[0] || $args{name}];
         $args{attributes}->{Does} = [ 'Catalyst::ActionRole::JMS' ];
     }
 
@@ -56,6 +56,7 @@ __PACKAGE__->meta->make_immutable;
 1;
 
 __END__
+
 =pod
 
 =encoding utf-8
@@ -66,7 +67,7 @@ Catalyst::Controller::JMS - controller base class to simplify usage of Catalyst:
 
 =head1 VERSION
 
-version 1.0
+version 1.1
 
 =head1 SYNOPSIS
 
@@ -182,4 +183,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
